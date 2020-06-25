@@ -1,5 +1,6 @@
 projects.psd
 *.psd
+
 # Logs
 logs
 *.log
