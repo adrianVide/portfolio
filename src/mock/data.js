@@ -32,29 +32,39 @@ export const projectsData = [
     id: uuidv4(),
     img: 'palcony.jpg',
     title: 'Palcony',
-    info: 'Info 1',
-    info2: 'Info 2',
-    techs: ['test1', 'test2', 'test3','test1', 'asdfasdf', 'asgaserga','test1', 'test2', 'test3','test1', 'test2', 'test3'],
+    info: 'As part of the #stayAtHome movement beacause of the Covid 19, Palcony aims to act as a hub for anyone that wants to share any activity with their neighborhood.',
+    info2: 'Publish any kind of event that will take place in your balcony. It will be geo positioned, and visible to your neighbours to join, chat and leave feedback.',
+    techs: ['NodeJS', 'ExpressJS', 'MongoDB', 'Leaflet','Bootstrap', 'Handlebars', 'Git'],
     url: 'https://palcony.com',
     repo: 'https://github.com/adrianVide/module-2-ironhack', // if no repo, the button will not show up
   },
   {
     id: uuidv4(),
+    img: 'todo.jpg',
+    title: 'Todo list',
+    info: 'Just in case you are as forgetful as I am (or just half) I created this todo list.',
+    info2: 'Created with ReactJS and Hooks, and connected to a MongoDB databes through NodeJS, with some Google-feel styling.',
+    techs: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', '3rd Party APIs', 'Materialize', 'Git'],
+    url: 'https://todo.adrianvp.com',
+    repo: 'https://github.com/adrianVide/challenge-todo-app', // if no repo, the button will not show up
+  },
+  {
+    id: uuidv4(),
     img: 'sun.jpg',
     title: 'U there, sun?',
-    info: '',
-    info2: '',
-    techs: [],
+    info: 'No more disapointment when you arrive to the beach and it is raining... Just in case you could not notice in advance this tool will help you.',
+    info2: 'A simple yet useful weather checker through a 3rd party API that let you search for any city in the world and grab its picture from another API.',
+    techs: ['HTML', 'CSS', 'JavaScript', '3rd party API', 'Git'],
     url: 'https://sun.adrianvp.com',
     repo: 'https://github.com/adrianVide/project-IronHack-Module-1', // if no repo, the button will not show up
   },
   {
     id: uuidv4(),
-    img: 'project.jpg',
+    img: 'githubusers.jpg',
     title: 'Github user search and display',
     info: '',
     info2: '',
-    techs: ['test1', 'test2', 'test3'],
+    techs: ['NodeJS', 'ExpressJS', '3rd Party APIs', 'Git'],
     url: 'https://githubusers.adrianvp.com',
     repo: 'https://github.com/adrianVide/jfdtt', // if no repo, the button will not show up
   },
@@ -70,25 +80,16 @@ export const contactData = {
 // FOOTER DATA
 export const footerData = {
   networks: [
-    {
-      id: uuidv4(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: uuidv4(),
-      name: 'codepen',
-      url: '',
-    },
+  
     {
       id: uuidv4(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/adrianvp/',
     },
     {
       id: uuidv4(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/adrianVide/',
     },
   ],
 };
