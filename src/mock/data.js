@@ -3,8 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 // HEAD DATA
 export const headData = {
   title: 'Adrian | Full-Stack Developer',
-  lang: 'en', 
-  description: 'Hey, you found me!', 
+  lang: 'en',
+  description: 'Hey, you found me!',
 };
 
 // HERO DATA
@@ -18,8 +18,10 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: 'I like creating visual communications to convey messages in an effective and aesthetically pleasing manner while keeping in mind marketing best practices of the digital world.',
-  paragraphTwo: 'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
+  paragraphOne:
+    'I like creating visual communications to convey messages in an effective and aesthetically pleasing manner while keeping in mind marketing best practices of the digital world.',
+  paragraphTwo:
+    'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
   paragraphThree: 'Making things work is what I enjoy the most. Smoothly, hassle free.',
   resume: '/static/FULLSTACKWEB_AdrianVideParis_ENG052020.pdf', // if no resume, the button will not show up
 };
@@ -32,6 +34,7 @@ export const projectsData = [
     title: 'Palcony',
     info: 'Info 1',
     info2: 'Info 2',
+    techs: ['test1', 'test2', 'test3','test1', 'asdfasdf', 'asgaserga','test1', 'test2', 'test3','test1', 'test2', 'test3'],
     url: 'https://palcony.com',
     repo: 'https://github.com/adrianVide/module-2-ironhack', // if no repo, the button will not show up
   },
@@ -41,6 +44,7 @@ export const projectsData = [
     title: 'U there, sun?',
     info: '',
     info2: '',
+    techs: [],
     url: 'https://sun.adrianvp.com',
     repo: 'https://github.com/adrianVide/project-IronHack-Module-1', // if no repo, the button will not show up
   },
@@ -50,6 +54,7 @@ export const projectsData = [
     title: 'Github user search and display',
     info: '',
     info2: '',
+    techs: ['test1', 'test2', 'test3'],
     url: 'https://githubusers.adrianvp.com',
     repo: 'https://github.com/adrianVide/jfdtt', // if no repo, the button will not show up
   },

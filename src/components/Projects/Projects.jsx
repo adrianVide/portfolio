@@ -21,14 +21,14 @@ const Projects = () => {
       setIsDesktop(false);
     }
   }, []);
-
+  console.log(projects);
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
-          {projects.map((project,index) => {
-            const { title, info, info2, url, repo, img } = project;
+          {projects.map((project, index) => {
+            const { title, info, info2, techs, url, repo, img } = project;
 
             return (
               <Row key={index}>
@@ -48,6 +48,10 @@ const Projects = () => {
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
                         <p className="mb-4">{info2 || ''}</p>
+                        <div className="my-2">  {project.techs.map((tech, i) => {
+                          return <span className="m-1 badge badge-secondary">{tech}</span>;
+                        })}</div>
+                      
                       </div>
                       <a
                         target="_blank"
