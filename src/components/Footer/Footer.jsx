@@ -1,13 +1,14 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
+// import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
 
-import { githubButtons } from '../../mock/data';
+import { githubButtons, footerData } from '../../mock/data';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
-  const { networks } = footer;
+  // const { footer } = useContext(PortfolioContext);
+  // const footer = footerData
+  const { networks } = footerData;
   const { isEnabled } = githubButtons;
 
   return (
@@ -35,10 +36,8 @@ const Footer = () => {
         </div>
         <hr />
         <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
+          © {new Date().getFullYear()} - Adrian Vide Paris
+        
         </p>
 
         {isEnabled && <GithubButtons />}

@@ -2,13 +2,15 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
+// import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+import { projectsData } from '../../mock/data.js'
+
 
 const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
-
+  // const { projects } = useContext(PortfolioContext);
+  const projects = projectsData;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -21,14 +23,13 @@ const Projects = () => {
       setIsDesktop(false);
     }
   }, []);
-  console.log(projects);
   return (
     <section id="projects">
       <Container>
         <div className="project-wrapper">
           <Title title="Projects" />
           {projects.map((project, index) => {
-            const { title, info, info2, techs, url, repo, img } = project;
+            const { title, info, info2, techs, url, repo, img } = projects;
 
             return (
               <Row key={index}>
@@ -41,15 +42,15 @@ const Projects = () => {
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
-                      <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                      <h3 className="project-wrapper__text-title">{project.title || 'Project Title'}</h3>
                       <div>
                         <p>
-                          {info ||
+                          {project.info ||
                             'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                         </p>
-                        <p className="mb-4">{info2 || ''}</p>
+                        <p className="mb-4">{project.info2 || ''}</p>
                         <div className="my-2">  {project.techs.map((tech, i) => {
-                          return <span className="m-1 badge badge-secondary">{tech}</span>;
+                          return <span key={i} className="m-1 badge badge-secondary">{tech}</span>;
                         })}</div>
                       
                       </div>
@@ -57,17 +58,17 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cta-btn cta-btn--hero"
-                        href={url || '#!'}
+                        href={project.url || '#!'}
                       >
                         See Live
                       </a>
 
-                      {repo && (
+                      {project.repo && (
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
                           className="cta-btn text-color-main"
-                          href={repo}
+                          href={project.repo}
                         >
                           Source Code
                         </a>
@@ -85,7 +86,7 @@ const Projects = () => {
                   >
                     <div className="project-wrapper__image">
                       <a
-                        href={url || '#!'}
+                        href={project.url || '#!'}
                         target="_blank"
                         aria-label="Project Link"
                         rel="noopener noreferrer"
@@ -104,7 +105,7 @@ const Projects = () => {
                           }}
                         >
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={project.title} filename={project.img} />
                           </div>
                         </Tilt>
                       </a>

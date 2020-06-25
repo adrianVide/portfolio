@@ -1,11 +1,12 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import PortfolioContext from '../../context/context';
+// import PortfolioContext from '../../context/context';
+import { heroData } from '../../mock/data.js'
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  // const { hero } = useContext(PortfolioContext);
+  const { title, name, subtitle, cta } = heroData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
