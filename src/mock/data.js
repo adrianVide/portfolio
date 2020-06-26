@@ -24,7 +24,7 @@ export const aboutData = {
     'From my past roles I acquired some expertise in SEO good practices and a taste for a classy/minimalistic design.',
   paragraphThree: 'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
   paragraphFour: 'Making things work is what I enjoy the most.',
-  resume: '/FULLSTACKWEB_AdrianVideParis_ENG052020.pdf', // if no resume, the button will not show up
+  resume: 'https://drive.google.com/file/d/1Aqkv8qXSliKcm2tvsnLOR1w9CR-jOnh1/view?usp=sharing', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA

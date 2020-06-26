@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 // import PortfolioContext from '../../context/context';
 import GithubButtons from '../GithubButtons/GithubButtons';
 
-import { githubButtons, footerData } from '../../mock/data';
+import { githubButtons, footerData } from '../../mock/data.js';
 
 const Footer = () => {
   // const { footer } = useContext(PortfolioContext);
@@ -24,10 +24,10 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={network.url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
                   rel="noopener noreferrer"
                   target="_blank"
-                  aria-label={network.name}
+                  aria-label={name}
                 >
                   <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
                 </a>
