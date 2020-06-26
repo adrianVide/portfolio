@@ -40,9 +40,19 @@ export const projectsData = [
   },
   {
     id: uuidv4(),
+    img: 'masksrus.jpg',
+    title: 'masksRus',
+    info: 'Hard times lead to great oportunities, and this one is no less. Taking advatage (not really, it is a fake shop) of the situational? world pandemic.',
+    info2: 'ReactJS based eCommerce where you can register, login, add to cart or wishlist and explore the never-ending universe of the masks. (mobile)',
+    techs: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB','Bootstrap', 'Git'],
+    url: 'https://masks-r-us.firebaseapp.com/',
+    repo: 'https://github.com/unai6/Masks-r-us-client-side', // if no repo, the button will not show up
+  },
+  {
+    id: uuidv4(),
     img: 'todo.jpg',
     title: 'Todo list',
-    info: 'Just in case you are as forgetful as I am (or just half) I created this todo list.',
+    info: 'Just in case you are as forgetful as I am (or half) I created this todo list.',
     info2: 'Created with ReactJS and Hooks, and connected to a MongoDB databes through NodeJS, with some Google-feel styling.',
     techs: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', '3rd Party APIs', 'Materialize', 'Git'],
     url: 'https://todo.adrianvp.com',

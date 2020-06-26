@@ -4,11 +4,12 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 // import PortfolioContext from '../../context/context';
-import { aboutData } from '../../mock/data.js';
+import { aboutData, footerData } from '../../mock/data.js';
 
 const About = () => {
   // const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = aboutData;
+  const { networks } = footerData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -65,6 +66,23 @@ const About = () => {
             </Fade>
           </Col>
         </Row>
+        <div className="social-links">
+          {networks &&
+            networks.map((network) => {
+              const { id, name, url } = network;
+              return (
+                <a
+                  key={id}
+                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label={name}
+                >
+                  <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
+                </a>
+              );
+            })}
+        </div>
       </Container>
     </section>
   );
