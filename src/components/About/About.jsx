@@ -4,12 +4,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 // import PortfolioContext from '../../context/context';
-import { aboutData, footerData } from '../../mock/data.js';
+import { aboutData, footerData, contactData } from '../../mock/data.js';
 
 const About = () => {
   // const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = aboutData;
+  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour, resume } = aboutData;
   const { networks } = footerData;
+  const { email } = contactData;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -50,6 +51,9 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphFour || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                </p>
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
@@ -62,6 +66,16 @@ const About = () => {
                     </a>
                   </span>
                 )}
+                <span className="d-flex mt-3">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cta-btn cta-btn--resume"
+                      href={`mailto:${email}`}
+                    >
+                      eMail
+                    </a>
+                  </span>
               </div>
             </Fade>
           </Col>

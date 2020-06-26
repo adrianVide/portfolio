@@ -12,17 +12,18 @@ export const heroData = {
   title: 'Full-Stack Developer',
   name: 'Adrian',
   subtitle: 'Digitally versatile ',
-  cta: '',
+  cta: 'Scroll down to know more',
 };
 
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'I like creating visual communications to convey messages in an effective and aesthetically pleasing manner while keeping in mind marketing best practices of the digital world.',
+    'Hi! I am Adrian Vide Paris, Full-Stack Developer.',
   paragraphTwo:
-    'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
-  paragraphThree: 'Making things work is what I enjoy the most. Smoothly, hassle free.',
+    'From my past roles I acquired some expertise in SEO good practices and a taste for a classy/minimalistic design.',
+  paragraphThree: 'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
+  paragraphFour: 'Making things work is what I enjoy the most.',
   resume: '/static/FULLSTACKWEB_AdrianVideParis_ENG052020.pdf', // if no resume, the button will not show up
 };
 
@@ -82,9 +83,9 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: 'Sounds good to you?',
+  btn: 'Drop me an email',
+  email: 'adrian.vide.paris@gmail.com',
 };
 
 // FOOTER DATA
