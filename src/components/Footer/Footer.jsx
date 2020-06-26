@@ -24,10 +24,10 @@ const Footer = () => {
               return (
                 <a
                   key={id}
-                  href={url || 'https://github.com/cobidev/gatsby-simplefolio'}
+                  href={network.url || 'https://github.com/cobidev/gatsby-simplefolio'}
                   rel="noopener noreferrer"
                   target="_blank"
-                  aria-label={name}
+                  aria-label={network.name}
                 >
                   <i className={`fa fa-${name || 'refresh'} fa-inverse`} />
                 </a>
