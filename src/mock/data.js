@@ -17,7 +17,7 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'me.jpg',
   paragraphOne:
     'Hi! I am Adrian Vide Paris, Full-Stack Developer.',
   paragraphTwo:
