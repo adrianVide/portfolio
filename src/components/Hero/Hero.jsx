@@ -2,7 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 // import PortfolioContext from '../../context/context';
-import { heroData } from '../../mock/data.js'
+import { heroData } from '../../mock/data.js';
+import Particles from 'react-particles-js';
 
 const Header = () => {
   // const { hero } = useContext(PortfolioContext);
@@ -24,6 +25,24 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
+        <Particles
+          className="particle-canvas"
+          params={{
+            particles: {
+              line_linked: {
+                shadow: {
+                  enable: true,
+                  color: '#33FAD7',
+                  blur: 1,
+                },
+              },
+            },
+          }}
+          style={{
+            width: '100%',
+            // backgroundImage: `url(${logo})`
+          }}
+        />
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
@@ -45,3 +64,5 @@ const Header = () => {
 };
 
 export default Header;
+
+
