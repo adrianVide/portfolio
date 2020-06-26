@@ -19,7 +19,7 @@ const Footer = () => {
         </a>
         <div className="social-links">
           {networks &&
-            networks.map(network => {
+            networks.map((network) => {
               const { id, name, url } = network;
               return (
                 <a
@@ -35,11 +35,7 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Adrian Vide Paris
-        
-        </p>
-
+        <p className="footer__text">© {new Date().getFullYear()} - Adrian Vide Paris</p>
       </Container>
     </footer>
   );
