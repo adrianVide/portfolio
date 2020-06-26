@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 export const headData = {
   title: 'Adrian | Full-Stack Developer',
   lang: 'en',
-  description: 'Hey, you found me!',
+  description: 'Full-Stack developer adrian vide paris',
 };
 
 // HERO DATA
