@@ -84,8 +84,10 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   cta: 'Sounds good to you?',
-  btn: 'Drop me an email',
-  email: 'adrian.vide.paris@gmail.com',
+  btn: 'email',
+  email: 'hi@adrianvp.com',
+  phone: 'tel:+34 686478847',
+  showPhone: '+34 686478847'
 };
 
 // FOOTER DATA

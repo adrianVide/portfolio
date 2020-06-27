@@ -7,7 +7,7 @@ import { contactData } from '../../mock/data'
 
 const Contact = () => {
   // const { contact } = useContext(PortfolioContext);
-  const { cta, btn, email } = contactData;
+  const { cta, btn, email, phone, showPhone } = contactData;
 
   return (
     <section id="contact">
@@ -18,14 +18,24 @@ const Contact = () => {
             <p className="contact-wrapper__text">
               {cta || 'Would you like to work with me? Awesome!'}
             </p>
-            <a
+            <div><a
               target="_blank"
               rel="noopener noreferrer"
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
             >
-              {btn || "Let's Talk"}
-            </a>
+              {email}
+            </a></div>
+            
+            <div className='mt-3'><a
+              target="_self"
+              rel="noopener noreferrer"
+              className="cta-btn cta-btn--resume"
+              href={phone}
+            >
+              {showPhone}
+            </a></div>
+            
           </div>
         </Fade>
       </Container>
