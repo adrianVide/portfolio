@@ -54,7 +54,7 @@ export const projectsData = [
     img: 'todo.jpg',
     title: 'Todo list',
     info: 'Just in case you are as forgetful as I am (or half) I created this todo list.',
-    info2: 'Created with ReactJS and Hooks, and connected to a MongoDB databes through NodeJS, with some Google-feel styling.',
+    info2: 'Created with ReactJS and Hooks, and connected to a MongoDB database through NodeJS, with some Google-feel styling. Plus, it grabs an image related to the title of each task from an external API.',
     techs: ['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB', '3rd Party APIs', 'Materialize', 'Git'],
     url: 'https://todo.adrianvp.com',
     repo: 'https://github.com/adrianVide/challenge-todo-app', // if no repo, the button will not show up
@@ -73,8 +73,8 @@ export const projectsData = [
     id: uuidv4(),
     img: 'githubusers.jpg',
     title: 'Github user search and display',
-    info: '',
-    info2: '',
+    info: 'A tool that searches on Github API for users and displays their repositories. If the user does not exist/has no repos, returns different messages. The plain slider was added for aesthetics :)',
+    info2: 'All under the surveillance of Node and Express.',
     techs: ['NodeJS', 'ExpressJS', '3rd Party APIs', 'Git'],
     url: 'https://githubusers.adrianvp.com',
     repo: 'https://github.com/adrianVide/jfdtt', // if no repo, the button will not show up
