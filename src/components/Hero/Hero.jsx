@@ -52,7 +52,7 @@ const Header = () => {
                 line_linked: {
                   shadow: {
                     enable: true,
-                    color: '#33FAD7',
+                    color: '#03b897',
                     blur: 1,
                   },
                 },
