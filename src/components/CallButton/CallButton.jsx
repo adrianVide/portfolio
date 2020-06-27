@@ -2,7 +2,7 @@ import React from 'react';
 
 const divStyle = {
   // color: "white",
-  backgroundColor: 'DodgerBlue',
+  backgroundColor: '#03b897',
   padding: '5px',
   // fontFamily: "Arial",
   position: 'fixed',
