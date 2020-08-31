@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
+import Cv from '../../resources/FULLSTACKWEB_AdrianVideParis_ENG082020.pdf'
 // import PortfolioContext from '../../context/context';
 import { aboutData, footerData, contactData } from '../../mock/data.js';
 
@@ -60,7 +61,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href={Cv} //From import not Mockdata
                     >
                       Resume
                     </a>

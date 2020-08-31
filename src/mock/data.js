@@ -24,7 +24,7 @@ export const aboutData = {
   paragraphThree:
     'With a strong background in a range of digital skills and marketing, I can manage the development process through in its entirety.',
   paragraphFour: 'Making things work is what I enjoy the most.',
-  resume: 'https://drive.google.com/file/d/1Aqkv8qXSliKcm2tvsnLOR1w9CR-jOnh1/view?usp=sharing', // if no resume, the button will not show up
+  resume: 'src/resources/FULLSTACKWEB_AdrianVideParis_ENG082020.pdf', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
